@@ -1,0 +1,749 @@
+main {
+  display: grid;
+  height: 20em;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "header2 header2 header2" 
+    "section2 section2 aside2" 
+    "footer2 footer2 footer2"; 
+   /* grid-template-areas: "footer2 footer2 footer2" "section2 section2 aside2" "header2 nav2 nav2"; */
+  /* haz otras distribuciones */
+ }
+
+header {
+  grid-area: header2;
+  grid-column: span 3;
+}
+
+blue {
+  grid-area: section2;
+}
+
+aside {
+  grid-area: aside2;
+}
+
+footer {
+  grid-area: footer2;
+  grid-column: span 3;
+}
+
+
+.header {
+    padding: 0%;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 2rem;
+  }
+  
+ 
+  /* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+	.navar {
+		display: none;
+		
+	}
+  } 
+ 
+
+ 
+
+/* Oculta el checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Icono del menú hamburguesa */
+.menu-icon {
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Menú desplegable */
+.hamburger-menu {
+	font-family: 'Courier New';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    
+}
+.menu {
+    padding-top: 2rem;
+	padding-bottom: 2rem ;
+    
+    align-items: center;
+    
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    
+    
+    transform: scale(0);
+    transform-origin:  left;
+    transition: all 0.3s ease;
+    
+}
+
+.menu a {
+    
+    color: #fff;
+    text-decoration: none;
+   
+    text-align: center;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+/* Efecto de hover en los enlaces */
+.menu a:hover {
+    background-color: #e63462;
+}
+
+/* Muestra el menú al hacer clic */
+#menu-toggle:checked ~ .menu {
+    opacity: 1;
+	width: 100%;
+    transform: scale(1);
+}
+@media (min-width: 600px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+  
+/*CONTAINERS*/
+
+/*nav logo*/
+  .mycontainer1 {
+    width: 10%;
+    padding: 2%;
+    float: left
+  }
+  /*container de "quienes somos?"*/
+  .mycontainer {
+    width: 25%;
+    padding: 2%;
+    float: left
+  }
+
+  .contform{
+    width:auto;
+    padding: 4%;
+
+  }
+
+  /*container del Carrusel*/
+  .contcar{
+    clear: both;
+    background: black;
+    padding-bottom: 4rem;
+  }
+
+  /*container de años*/
+  /*año1*/
+  .año1 {
+    background-color: #e63462;
+  }
+
+   /*año2*/
+   .año2 {
+    background-color: #e0ff4f;
+  }
+
+   /*año3*/
+   .año3 {
+    background-color: #000000;
+  }
+
+
+  .sidebar {
+          width: 20rem;
+          height:auto ;
+          background-color: black;
+          padding: 2.5rem;
+		  color: white;
+          float: right;
+         
+      }
+	  
+
+      /* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+  .sidebar {
+      display: none;
+  }
+}
+
+ .sidebar img {
+
+          width: 100%;
+		  padding-top: 3rem;
+          margin-bottom: 3rem;
+      }
+
+
+     
+  
+  .body {
+    background-color: blue;
+  }
+
+/* Contenedor general del footer */
+footer {
+  background-color: #000000;      /* Fondo oscuro */
+  color: #fff;                 /* Texto blanco */
+  padding: 50px 0;             /* Espaciado interno superior e inferior */
+}
+
+
+/*Titulos*/
+.uno {
+  padding-top: 40px;
+  font-family: 'Courier New';
+  font-weight:bold;
+  font-size: 36px;
+  color: #333;
+}
+.dos {
+	padding-top: 40px;
+	font-family: 'Courier New';
+	font-weight:bold;
+	font-size: 36px;
+	color: #ffffff;
+  }
+
+.uno2 {
+  padding: 40px;
+  text-align: center;
+  font-family: 'Courier New';
+  font-weight:bold;
+  font-size: 36px;
+  color: #e63462;
+}
+
+
+
+/*IMAGENES*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Galería adaptable */
+  gap:5px; /* Espaciado entre las imágenes */
+  padding: 10px; /* Espaciado interno del contenedor */
+ 
+}
+
+/* Cada imagen dentro de la galería */
+.gallery-item {
+  overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+
+}
+
+/* Imágenes dentro de los elementos */
+.gallery-item img {
+  width: 100%;      /* Las imágenes ocupan todo el ancho del contenedor */
+  height: 100%;     /* Ajusta la altura automáticamente */
+  transition: transform 0.15s ease; /* Efecto de transición para agrandarlas */
+  
+}
+
+/* Efecto hover para hacer grande la imagen */
+.gallery-item:hover img {
+  transform: scale(1.5); /* Agranda la imagen */
+  
+ 
+}
+.gallery-item:hover {
+overflow: visible; /* Permite que la imagen se desborde cuando está en hover */
+}
+
+
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+  .gallery-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Menor tamaño de columnas en pantallas pequeñas */
+  }
+}
+
+/*img carrusel*/
+.imcar {
+  width: 100%;
+  height: 100%;
+}
+
+.pub{
+  padding: 2%;
+  padding-right: 4%;
+}
+
+/* NET ART*/
+.image-container {
+	position: sticky;
+   
+   right: -10em; /* Coloca el contenedor en la esquina superior derecha */
+ 
+   border-radius: 5px;
+   display: flex; /* Usar flexbox para alinear la imagen y el texto */
+   align-items:flex-end; /* Centrar verticalmente */
+   
+}
+
+#scoreImage {
+   width: 3em; /* Tamaño reducido para la imagen */
+   height: auto; /* Mantiene la proporción de la imagen */
+   margin-right: 0.4em; /* Espacio entre la imagen y el texto */
+}
+
+.score {
+   font-size: 1.2em; /* Tamaño del texto del contador más pequeño */
+   color: #000000; 
+   font-family:'Courier New';
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+	#scoreImage {
+		display: none;
+	}
+	.score {
+		display: none;
+	}
+  }
+
+.image {
+   position: absolute;
+   
+   transition: transform 0.2s ease;
+}
+
+.image:hover {
+   transform: scale(1.1);
+}
+
+/* Estilo para el contenedor de p5.js */
+#p5-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	
+}
+
+/* INTRINSIC DESIGN */
+
+
+* {box-sizing: border-box;}
+
+#INTRINSIC {
+  --red: #e63462;
+  --yellow: #F0CB0B;
+  --white: black;
+  --lletra: white;
+  
+  
+  
+  
+  
+}
+#INTRINSIC h1, p, time span {
+	margin: 0;
+	text-shadow: 0 0; 
+			/* needed to fix Core text bug in macOS 10.13
+				 Discussion: https://bugzilla.mozilla.org/show_bug.cgi?id=1459858
+				 Fix: https://twitter.com/ThunderNixon/status/1009878237068001280 */
+}
+#INTRINSIC h1 {
+	display: contents;
+}
+#INTRINSIC time {
+	display: contents;
+}
+#INTRINSIC h1 span i {
+	font-style: normal;
+	background: var(--white);
+	color: white;
+}
+#INTRINSIC h1 span:nth-child(2) {
+	background: var(--yellow);
+	justify-self: start;
+}
+h1 span:nth-child(3) {
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	justify-self: start;
+	background: var(--yellow);
+	z-index: -10;
+}
+#INTRINSIC h1 span:nth-child(3) big {
+	width: 0.6em;
+	height: 0.5em;
+	background: var(--yellow);
+	display: inline-block;
+}
+#INTRINSIC time span:nth-child(2) {
+	background: var(--white);
+	color: white
+}
+#INTRINSIC b {
+	min-width: 100px;
+	min-height: 100px;
+	background: var(--red);
+}
+
+
+/* ----------------- Typography -------------------- */
+
+@font-face {
+  font-family: 'Venn';
+  src: url('../fonts/Venn/VennVF_W.woff2') format('woff2');
+}
+#INTRINSIC { 
+  font-family: 'Courier New', 'Helvetica Neue', Helvetica, Avenir, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-size: calc(1vh + 2vw + 1rem);
+  font-stretch: 84%;
+	line-height: 0.9;
+}
+
+@media (max-width: 400px) {
+	#INTRINSIC p, time { /* Weinmar + dates */
+		font-stretch: 40%;
+		font-weight: 300;
+	}
+	#INTRINSIC h1 {
+		font-size: 2.2rem;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		font-stretch: 75%;
+		font-weight: 563;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		font-stretch: 92%;
+		font-weight: 789;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		line-height: 0.7;
+		font-size: 4rem;
+		font-stretch: 106%;
+		font-weight: 800;
+	}
+	#INTRINSIC time span:nth-child(1),
+	#INTRINSIC time span:nth-child(2) {
+		background: black;
+		color: var(--red);
+		padding: 4px;
+	}
+}
+@media (min-width: 400px) and (max-width: 600px) {
+	#INTRINSIC p, time { /* Weinmar + dates */
+		font-stretch: 40%;
+		font-weight: 300;
+	}
+	#INTRINSIC h1 {
+		font-size: 3rem;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		font-stretch: 75%;
+		font-weight: 563;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		font-stretch: 92%;
+		font-weight: 789;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		line-height: 0.7;
+		letter-spacing: 1vh;
+		font-size: 2.5rem;
+		font-stretch: 106%;
+		font-weight: 800;
+	}
+	#INTRINSIC time span:nth-child(1),
+	#INTRINSIC time span:nth-child(2) {
+		background: black;
+		color: var(--red);
+		padding: 4px;
+	}
+}
+@media (min-width: 600px) and (max-width: 800px) {
+	#INTRINSIC time { 
+		font-stretch: 85%;
+		font-weight: 800;
+	}
+	#INTRINSIC p {
+		background: black;
+		color: var(--red);
+		padding: 4px;
+		font-stretch: 40%;
+		font-weight: 300;
+	}
+	#INTRINSIC h1 {
+		font-size: 4rem;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		font-stretch: 75%;
+		font-weight: 433;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		font-stretch: 92%;
+		font-weight: 789;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		line-height: 0.7;
+		letter-spacing: 0.5vh;
+		font-size: 2.4rem;
+		font-stretch: 106%;
+		font-weight: 800;
+	}
+}
+@media (min-width: 800px) {
+	#INTRINSIC p, time { /* Weinmar + dates */
+		font-stretch: 80%;
+		font-weight: 650;
+		font-size: 2rem;
+	}
+	#INTRINSIC h1 {
+		font-size: 5rem;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		font-stretch: 75%;
+		font-weight: 690;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		font-stretch: 93%;
+		font-weight: 792;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		line-height: 0.7;
+		letter-spacing: 0.7vh;
+		font-size: 3rem;
+		font-stretch: 106%;
+		font-weight: 800;
+	}
+}
+
+@media (max-height: 900px) {
+	#INTRINSIC h1 span:nth-child(3) big {
+		display: none;
+	}
+}
+@media (max-height: 700px) {
+	#INTRINSIC h1 span:nth-child(3) {
+		font-size: 2rem;
+		letter-spacing: 3.5px;
+	}
+}
+@media (max-height: 500px) {
+	#INTRINSIC h1 span:nth-child(3) {
+		font-size: 1rem;
+		letter-spacing: 3.5px;
+	}
+}
+
+
+/* ----------------- Grid Layout -------------------- */
+
+#INTRINSIC article {
+	display: grid;
+	column-gap: 4px;
+	justify-content: center;
+	height: 88vh;
+	min-height: 350px;
+}
+
+@media (max-height: 350px) {
+	#INTRINSIC {
+		margin: 17px 3rem;
+	}
+}
+
+@media (max-width: 400px) {
+	#INTRINSIC { 
+	  margin: 0.5rem;
+	}
+	#INTRINSIC article {
+		grid-template-columns: auto 0.4rem auto auto; 
+		grid-template-rows: 1fr auto auto auto;
+		column-gap: 10px;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		display: none;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		display: none;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		grid-row: 2 / 5;
+		grid-column: 1;
+	}
+	#INTRINSIC h1 span:nth-child(3) big {
+		display: none;
+	}
+	#INTRINSIC p {
+		display: none;
+	}
+	#INTRINSIC time span:nth-child(1) {
+		grid-row: 3;
+		grid-column: 2 / 4;
+	}
+	#INTRINSIC time span:nth-child(2) {
+		grid-row: 4;
+		grid-column: 2 / 4;
+	}
+	#INTRINSIC b {
+		grid-row: 1 / 3;
+		grid-column: 2;
+		min-width: 0;
+		min-height: 0;
+		margin-bottom: 4px;
+	}
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+	#INTRINSIC { 
+	  margin: 1rem;
+	}
+	#INTRINSIC article {
+		grid-template-columns: calc(8rem + 10vw) auto; 
+		grid-template-rows: 1fr auto calc(8rem + 10vw) 1fr auto auto;
+		row-gap: 4px;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		grid-row: 6;
+		grid-column: span 2;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		grid-row: 7;
+		grid-column: span 2;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		grid-row: 1 / 3;
+		grid-column: 2;
+	}
+	#INTRINSIC h1 span:nth-child(3) big {
+		display: none;
+	}
+	#INTRINSIC p {
+		display: none;
+	}
+	#INTRINSIC time span:nth-child(1) {
+		grid-row: 2;
+		grid-column: 1;
+		align-self: end;
+		justify-self: start;
+	}
+	#INTRINSIC time span:nth-child(2) {
+		grid-row: 4;
+		grid-column: 1;
+		align-self: start;
+		justify-self: end;
+	}
+	#INTRINSIC b {
+		grid-row: 3;
+		grid-column: 1;
+		min-width: 0;
+		min-height: 0;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+	#INTRINSIC { 
+	  margin: 2rem;
+	}
+	#INTRINSIC article {
+		grid-template-columns: auto 11rem auto; 
+		grid-template-rows: 1fr 11rem 1fr 1fr auto auto;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		grid-row: 6;
+		grid-column: 1 / 5;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		grid-row: 7;
+		grid-column: 1 / 5;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		grid-row: 1 / 4;
+		grid-column: 4;
+	}
+	#INTRINSIC h1 span:nth-child(3) big {
+		display: none;
+	}
+	#INTRINSIC p {
+		grid-row: 2;
+		grid-column: 1;
+		align-self: start;
+	}
+	#INTRINSIC time span:nth-child(1) {
+		grid-row: 1;
+		grid-column: 2;
+		align-self: end;
+	}
+	#INTRINSIC time span:nth-child(2) {
+		grid-row: 3;
+		grid-column: 2;
+		align-self: start;
+		justify-self: end;
+	}
+	#INTRINSIC b {
+		grid-row: 2 / 3;
+		grid-column: 2;
+	}
+}
+
+@media (min-width: 800px) {
+	#INTRINSIC { 
+	  margin: 5vh 3rem;
+	}
+	#INTRINSIC article {
+		grid-template-columns: auto 6px auto 13rem auto; 
+		grid-template-rows: auto 11rem auto 1fr auto auto;
+	}
+	#INTRINSIC h1 span:nth-child(1) {
+		grid-row: 6;
+		grid-column: 1 / 5;
+	}
+	#INTRINSIC h1 span:nth-child(2) {
+		grid-row: 7;
+		grid-column: 1 / 5;
+	}
+	#INTRINSIC h1 span:nth-child(3) {
+		grid-row: 1 / 3;
+		grid-column: 5;
+	}
+	#INTRINSIC p {
+		grid-row: 2;
+		grid-column: 1;
+	}
+	#INTRINSIC time span:nth-child(1) {
+		grid-row: 2;
+		grid-column: 3;
+	}
+	#INTRINSIC time span:nth-child(2) {
+		grid-row: 3;
+		grid-column: 5;
+	}
+	#INTRINSIC b {
+		grid-row: 2 / 4;
+		grid-column: 4;
+	}
+} 
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+  #INTRINSIC {
+      display: none;
+  }
+}
+
+

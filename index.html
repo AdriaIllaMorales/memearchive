@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <!--<BOOSTRAP>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--<P5.JS>-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+
+    <!--<CSS LINK>-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <title>Meme Archive
+    </title>
+
+</head>
+
+<body>
+ 
+<main>
+ <!--<HEADER>-->
+  <header class="header">
+    
+      <div>
+        <img src= "media/HeaderDark.jpg" class="img-fluid" >
+      </div>
+
+  <div class="navar">
+      <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link"  href="#" alt="Inicio">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="#nosotros" alt="Sobre Nosotros">Sobre Nosotros</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#años" alt="Años">Años</a>
+    </li>
+    <img class="mycontainer1" src="media/wpink.png"  class="d-block w-100" href="#"  alt="Meme Archive Logo">
+    <li class="nav-item">
+      <a class="nav-link" href="#articulos" alt="Artículos">Artículos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#INTRINSIC" alt="Aportar">Aporta</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contacto" alt="Contacto">Contacta</a>
+    </li>
+  </ul>
+</div>
+
+<!--<HEADER (>600px)>-->
+<div class="hamburger-menu">
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+      <img src="media/burgir.png" alt="">
+  </label>
+  
+  <!-- Menú desplegable -->
+  <div class="menu">
+      <a href="#" alt="Inicio">Home</a>
+      <a href="#nosotros" alt="Sobre Nosotros">Sobre Nosotros</a>
+      <a href="#años" alt="Años">Años</a>
+      <a href="#articulos" alt="Artículos">Artículos</a>
+      <a href="#contacto">Aporta</a>
+      <a href="#contacto">Contacta</a>
+  </div>
+</div>
+</header>
+  
+  
+  
+  
+
+
+
+
+
+
+<blue><!--GRID-->
+<!--SOBRE NOSOTROS-->
+  <section id="nosotros">
+  <img class="mycontainer" src="media/bpink.png" class="d-block w-100" alt="...">
+  <h1 class="uno">QUE ES MEME ARCHIVE?</h1>
+  <div class="pub">
+  <p > Meme Archive es un archivo que guarda los memes de todos años para que puedas ver lo mejor de cada año además de poder aportar!
+    <br >
+    Sumérgete en el mundo de los memes. Aquí encontrarás una mina de oro de memes clásicos y los más recientes.
+    Descubre los mejores memes de cada año y lee artículos sobre la historia y el impacto de los memes en la cultura popular."
+  </p>
+</div>
+  </section>
+
+  <!--CONTADOR NETART-->
+  <section>
+    <div class="image-container">
+      <img id="scoreImage" src="media/trollface.png" alt="Contador de Puntos" />
+      <div class="score">X <span id="score">0</span></div>
+  </div>
+  </section>
+
+<!--NetArt-->
+    
+<script src="assets/js/random.js"></script>
+
+<!--CARRUSEL AÑOS-->
+<section class="contcar">
+<h1 class="uno2">LO MEJOR DEL ANO</h1>
+
+<!--<CARROUSEL>-->
+<div class="carousel">
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"  class="img-fluid">
+      <img src="media/carrusel.jpg" class="imcar" alt="Carrousel1">
+    </div>
+    <div class="carousel-item"  class="img-fluid">
+      <img src="media/carrusel1.jpg" class="imcar" alt="Carrousel2">
+    </div>
+    <div class="carousel-item"  class="img-fluid">
+      <img src="media/carrusel2.jpg" class="imcar" alt="Carrousel3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</section>
+
+
+<!--<GALERIA MEMES>-->
+<Section class="año1" id="años">
+<h1 class="uno">2010</h1>
+<div class="gallery-container">
+  <div class="gallery-item">
+      <img src="media/memes/2010-1.gif" alt="Imagen 1">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2010-2.png" alt="Imagen 2">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2010-3.jpg" alt="Imagen 3">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2010-4.jpg" alt="Imagen 4">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2010-5.png" alt="Imagen 5">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2010-6.png" alt="Imagen 6">
+  </div>
+  <div class="gallery-item">
+    <img src="media/memes/2010-7.jpg" alt="Imagen 7">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2010-8.jpg" alt="Imagen 8">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2010-9.jpg" alt="Imagen 9">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2010-10.png" alt="Imagen 10">
+</div>
+</div>
+</Section>
+
+<section class="año3">
+<h1 class="dos">2015</h1>
+<div class="gallery-container">
+  <div class="gallery-item">
+      <img src="media/memes/2015-1.gif" alt="Imagen 1">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2015-2.jpg" alt="Imagen 2">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2015-3.png" alt="Imagen 3">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2015-4.jpg" alt="Imagen 4">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2015-5.png" alt="Imagen 5">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2015-6.png" alt="Imagen 6">
+  </div>
+  <div class="gallery-item">
+    <img src="media/memes/2015-7.gif" alt="Imagen 7">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2015-8.jpg" alt="Imagen 8">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2015-9.jpg" alt="Imagen 9">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2015-10.jpg" alt="Imagen 10">
+</div>
+</div>
+</section>
+
+<section class="año2" >
+<h1 class="uno">2020</h1>
+<div class="gallery-container">
+  <div class="gallery-item">
+      <img src="media/memes/2020-1.png" alt="Imagen 1">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2020-2.png" alt="Imagen 2">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2020-3.png" alt="Imagen 3">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2020-4.png" alt="Imagen 4">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2020-5.png" alt="Imagen 5">
+  </div>
+  <div class="gallery-item">
+      <img src="media/memes/2020-6.jpg" alt="Imagen 6">
+  </div>
+  <div class="gallery-item">
+    <img src="media/memes/2020-7.gif" alt="Imagen 7">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2020-8.png" alt="Imagen 8">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2020-9.png" alt="Imagen 9">
+</div>
+<div class="gallery-item">
+  <img src="media/memes/2020-10.jpg" alt="Imagen 10">
+</div>
+</div>
+</section>
+
+<!--Publicaciones-->
+<section  class="pub" id="articulos">
+  <h1 class="uno">Artículos</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="media/Arts/01.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a href="https://fcp.uncuyo.edu.ar/los-memes-una-nueva-forma-de-expresion-social" target="blank">
+        <h5 class="card-title">Los memes: una expresión social con amplio poder de viralización</h5>
+      </a>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="media/Arts/02.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="media/Arts/03.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="media/Arts/04.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="media/Arts/05.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="media/Arts/06.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--<INTRINSIC>-->
+ <section>
+  <section id="INTRINSIC">      
+    <article>
+      <h1><span><i>SUBE</i>TU </span><span>MEME </span><span><big></big>COMUNIDAD</span></h1>
+      <p>APORTA</p> 
+      <time><span>A</span><span>LA</span></time>
+      <b></b>
+    </article>
+  
+  </section>
+</section> 
+
+<!--FORM APORTA-->
+<section class="contform"> 
+<div>
+<h1>Quieres ser parte?</h1>
+<p>Colabora con nosotros, solo selecciona el año de tu meme y a continuación sube el archivo (img).</p>
+</div>
+<section>
+<form class="was-validated">
+  <div class="mb-3">
+    <select class="form-select" required aria-label="select example">
+      <option value="">De que año es tu meme?</option>
+      <option value="1">2010</option>
+      <option value="2">2015</option>
+      <option value="3">2020</option>
+    </select>
+    <div class="invalid-feedback">Example invalid select feedback</div>
+  </div>
+
+  <div class="mb-3">
+    <input type="file" class="form-control" aria-label="file example" required>
+    <div class="invalid-feedback">Example invalid form file feedback</div>
+  </div>
+
+  <div class="mb-3">
+    <button class="btn btn-primary" type="submit" >Submit form</button>
+  </div>
+</form>
+</section>
+</section>
+
+<!--P5JS
+ Contenedor opcional para p5.js 
+<div id="p5-container">
+ Enlazar el archivo JavaScript con el código de p5.js 
+<script src="assets/js/sketch.js"></script>
+</div>-->
+</blue>
+
+
+
+<!--SIDEBAR-->
+
+
+<aside class="sidebar">
+  <section class="container">
+  <h4>RECOMENDACIONES</h4>
+     <img src="media/side.gif" alt="Imagen 1">
+     <img src="media/side2.gif" alt="Imagen 2">
+     <img src="media/side3.gif" alt="Imagen 3">
+     <img src="media/side4.gif" alt="Imagen 4">
+     <img src="media/side5.gif" alt="Imagen 5">
+     <img src="media/side6.gif" alt="Imagen 6">
+     <img src="media/side7.gif" alt="Imagen 7">
+     <img src="media/side8.gif" alt="Imagen 8">
+     <img src="media/side9.gif" alt="Imagen 9">
+     <img src="media/side10.gif" alt="Imagen 10">
+     <img src="media/side11.gif" alt="Imagen 11">
+     <img src="media/side12.gif" alt="Imagen 12">
+     <img src="media/side13.gif" alt="Imagen 13">
+     <img src="media/side14.gif" alt="Imagen 14">
+     <img src="media/side15.gif" alt="Imagen 15">
+  </section>
+</aside>
+
+
+<div class="clearfix"></div>
+</div>
+
+
+
+<!--FOOTER-->
+
+<footer id="contacto">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Acerca de Nosotros</h3>
+        <p>Meme Archive es un archivo que guarda los memes de todos años
+           para que puedas ver lo mejor de cada año además de poder aportar!</p>
+        <p>memearchive@airy.org,
+          Carrer de Jaume II, 69, 25001 Lleida.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#años">Años</a></li>
+          <li><a href="#articulos">Atículos</a></li>
+          <li><a href="#INTRINSIC">Aporta</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">   
+        <h3> Síguenos</h3>
+        <ul class="social-icons">
+          <li><a href="https://www.instagram.com/"><i class="fab fa-facebook-f"></i>Instagram</a></li>
+          <li><a href="https://x.com/"><i class="fab fa-twitter"></i>X</a></li>
+          <li><a href="https://www.youtube.com/"><i class="fab fa-instagram"></i>Youtube</a></li>   
+        </ul>
+
+        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</main>
+
+</body>
+</html>
